@@ -10,7 +10,7 @@
     h1, p {
     color: blue
     }
-    a {
+    nav > a {
     color: white;
     padding: 0% 10% 0% 10%;
       transition-duration: 0.4s;
@@ -42,7 +42,7 @@
     document.getElementById("link").href = "javascript:innerHTML=document.getElementsByTagName('body')[0].innerHTML+<scr"+"ipt>"+code+"</scr"+"ipt>";
   }
   </script>
-  <button>Create</button>  <a id="link"></a>
+  <button onclick="create();">Create</button>  <a id="link"></a>
 
 </body>
 </html>

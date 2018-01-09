@@ -39,7 +39,8 @@
   var code = document.getElementById("edit").textContent;
       var name = document.getElementById("name").textContent;
       document.getElementById("link").textContent = name;
-    document.getElementById("link").href = "javascript:innerHTML=document.getElementsByTagName('body')[0].innerHTML+<scr"+"ipt>"+code+"</scr"+"ipt>";
+    document.getElementById("link").href = 'javascript:innerHTML=document.getElementsByTagName("body")[0].innerHTML+"<scr'+'ipt>'+code+'</scr'+'ipt>"';
+    // hi
   }
   </script>
   <button onclick="create();">Create</button>  <a id="link"></a>

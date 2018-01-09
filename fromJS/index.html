@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BookmarkletMaker - Create</title>
+  <style>
+    body {
+    background-color: orange;
+      color: blue;
+    }
+    h1, p {
+    color: blue
+    }
+    a {
+    color: white;
+    padding: 0% 10% 0% 10%;
+      transition-duration: 0.4s;
+    }
+    nav, button {
+    background-color: darkblue;
+      text-align: center;
+    }
+    a:hover {
+    background-color: blue;
+    border-radius: 8px;
+    }
+    button {
+    border-radius: 8px;
+      border-color: darkblue;
+    }
+  </style>
+</head>
+<body>
+<nav><a href="https://amazinigmech2418.github.io/BookmarkletMaker/home">Home</a> <a href="/BookmarkletMaker/about">About</a> <a href="/BookmarkletMaker/fromJS">Create from JavaScript</a> </nav>
+<h1>Create</h1>
+  <p id="edit" contenteditable="true">Put your code here.</p>
+  <p id="name" contenteditable="true">The name goes here.</p>
+  <script>
+  function create() {
+  var code = document.getElementById("edit").textContent;
+      var name = document.getElementById("name").textContent;
+      document.getElementById("link").textContent = name;
+    document.getElementById("link").href = "javascript:innerHTML=document.getElementsByTagName('body')[0].innerHTML+<scr"+"ipt>"+code+"</scr"+"ipt>";
+  }
+  </script>
+  <button>Create</button>  <a id="link"></a>
 
+</body>
+</html>
+ 
